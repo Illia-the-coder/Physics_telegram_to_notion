@@ -29,3 +29,5 @@ Finally, the code matches the dates from the 'res_s' and 'res_e' DataFrames with
 ## 🏁 Conclusion
 
 With these steps, you can now easily analyze and visualize the information from your group chat history. Whether you're a teacher looking to track your lessons or just a member of a group chat looking to reminisce, this code provides a clean and structured way to do so. 🎉
+Also I posted all this structured info in notion page and then in super page - https://physics171.super.site/
+![image](https://user-images.githubusercontent.com/101904816/230796282-a76307cd-568d-493d-8f57-14ca2eb82d51.png)
