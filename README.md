@@ -1,33 +1,36 @@
 # 📝 Readme
 
-## 🔎 Introduction
+## 🔎 Вступ
 
-Have you ever wanted to analyze your group chat history in a structured and easy-to-read format? This code is here to help! Written in Python, this code processes the exported history of a Telegram group chat and creates telegraph pages with the images. Additionally, it matches the dates from the processed data with the dates from the plans files to give you an overview of how the actual lessons align with the planned lessons.
+Чи хотіли ви колись проаналізувати історію вашого групового чату в структурованому та легкодоступному форматі? Цей код допоможе вам! Написаний на Python, цей код обробляє експортовану історію групового чату Telegram та створює сторінки Telegraph з зображеннями. Крім того, він порівнює дати з оброблених даних з датами з файлів планів, щоб дати вам загальний огляд того, як реальні уроки відповідають запланованим.
 
-## 💻 Technical Details
+## 💻 Технічні деталі
 
-The code uses the following libraries for its processing:
+Код використовує наступні бібліотеки для обробки:
 
-| Library | Purpose |
-|---------|---------|
-| Numpy | For linear algebra |
-| Pandas | For data processing and working with CSV files |
-| JSON | For reading JSON data |
+| Бібліотека | Призначення |
+| --- | --- |
+| Numpy | Для лінійної алгебри |
+| Pandas | Для обробки даних та роботи з CSV-файлами |
+| JSON | Для читання JSON-даних |
 
-It processes two sets of data: 'result.json' and two plans files, '7_plan.csv' and '8_plan.csv'. The code reads the 'result.json' file and stores it in a pandas DataFrame 'df'. The 'date' column is transformed into a readable format by the PC and the 'serv' column is added to the DataFrame with the URL of the uploaded image. The DataFrame is then sorted into two DataFrames 's_g' and 'e_g' based on dates.
+Він обробляє два набори даних: 'result.json' та два файли планів, '7_plan.csv' та '8_plan.csv'. Код читає файл 'result.json' та зберігає його у DataFrame pandas 'df'. Колонка 'date' трансформується у зрозумілий формат ПК, а колонка 'serv' додається до DataFrame з URL завантаженого зображення. DataFrame потім сортується на два DataFrame 's_g' та 'e_g' за датами.
 
-## 🎨 Creation of Telegraph Pages
+## 🎨 Створення сторінок Telegraph
 
-The code then groups the 's_g' DataFrame by date and creates a telegraph page for each group with the images of that group. The date, date in a readable format, and the link to the telegraph page are stored in a DataFrame 'res_s'.
+Код потім групує DataFrame 's_g' за датою та створює сторінку Telegraph для кожної групи з зображеннями цієї групи. Дата, дата у зрозумілому форматі та посилання на сторінку Telegraph зберігаються в DataFrame 'res_s'.
 
-The same steps are repeated for the 'e_g' DataFrame and the results are saved in a DataFrame 'res_e'.
+Ті ж самі кроки повторюються для DataFrame 'e_g' та результати зберігаються в DataFrame 'res_e'.
 
-## 📅 Matching with Plan
+## 📅 Відповідність з планом
 
-Finally, the code matches the dates from the 'res_s' and 'res_e' DataFrames with the dates from the plans files, '7_plan.csv' and '8_plan.csv', respectively. The transformed data is then saved for further analysis.
+На завершення код порівнює дати з DataFrame 'res_s' та 'res_e' з датами з файлів планів, '7_plan.csv' та '8_plan.csv' відповідно. Трансформовані дані зберігаються для подальшого аналізу.
 
-## 🏁 Conclusion
+## 🏁 Висновок
 
-With these steps, you can now easily analyze and visualize the information from your group chat history. Whether you're a teacher looking to track your lessons or just a member of a group chat looking to reminisce, this code provides a clean and structured way to do so. 🎉
-Also I posted all this structured info in notion page and then in super page - https://physics171.super.site/
-![image](https://user-images.githubusercontent.com/101904816/230796282-a76307cd-568d-493d-8f57-14ca2eb82d51.png)
+З цими кроками ви тепер можете легко аналізувати та візуалізувати інформацію з історії вашого групового чату. Незалежно від того, чи ви вчитель, який хоче відстежувати свої уроки, чи просто учасник групового чату, який хоче згадати минуле, цей код забезпечує чистий та структурований спосіб для цього. 🎉
+Також я розмістила всю цю структуровану інформацію на сторінці Notion, а потім на сторінці Super -
+
+[https://physics171.super.site/](https://physics171.super.site/)
+
+![https://user-images.githubusercontent.com/101904816/230796282-a76307cd-568d-493d-8f57-14ca2eb82d51.png](https://user-images.githubusercontent.com/101904816/230796282-a76307cd-568d-493d-8f57-14ca2eb82d51.png)
